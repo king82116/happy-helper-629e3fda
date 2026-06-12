@@ -38,8 +38,9 @@ export const Route = createFileRoute("/api/public/v1/motorace/demo")({
         });
         if (error) return new Response(`session_failed: ${error.message}`, { status: 500 });
 
-        const origin = new URL(request.url).origin;
-        return Response.redirect(`${origin}/motorace?token=${token}`, 302);
+        return new Response(JSON.stringify({ token }), {
+          headers: { "content-type": "application/json" },
+        });
       },
     },
   },
