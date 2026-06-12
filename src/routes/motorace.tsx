@@ -64,13 +64,23 @@ function MotoracePage() {
 
 
   const secondsLeft = Math.max(0, Math.ceil(((state ? new Date(state.current_period.ends_at).getTime() : now + 60000) - now) / 1000));
-  const showRace = secondsLeft <= 23 && secondsLeft > 0;
+  const showRace = secondsLeft <= 20;
   const issue = state?.current_period.period_no || "2026061210001907";
   const last = state?.recent_results?.[0]?.result_winner || 4;
   const topThree = useMemo(() => {
     const rest = NUMBERS.filter((n) => n !== last);
     return [last, rest[(last + 1) % rest.length], rest[(last + 4) % rest.length]];
   }, [last]);
+  // Pre-generated random lane speeds per period so each race looks unique but stable
+  const laneSpeeds = useMemo(() => {
+    const seed = state?.current_period.id || "default";
+    let h = 0; for (const c of seed) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+    return NUMBERS.map((_, i) => {
+      h = (h * 1103515245 + 12345) >>> 0;
+      return 0.85 + ((h % 1000) / 1000) * 0.35; // 0.85 - 1.20 speed multiplier
+    });
+  }, [state?.current_period.id]);
+
 
   const placeBet = async (betType: string, betValue: string) => {
     if (!state || !token || placing) return;
