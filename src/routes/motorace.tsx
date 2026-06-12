@@ -187,14 +187,53 @@ function WaitingStage({ issue, secondsLeft, topThree }: { issue: string; seconds
   </div>;
 }
 
-function RaceStage({ issue, topThree }: { issue: string; topThree: number[] }) {
-  return <div className="relative h-full" style={{ background: "#111" }}>
-    <div className="absolute left-0 top-[8px] flex h-[29px] items-center gap-[2px] px-4"><img src={`${A}/number-3f825650.png`} className="h-[27px] w-[180px]" /><span className="ml-1 text-[16px] font-bold">1st</span></div>
-    <img src={`${A}/track3_1-cf31d304.png`} className="absolute left-0 top-[46px] h-[167px] w-full object-cover" />
-    <img src={`${A}/car-b1876e4f.png`} className="absolute left-[13px] top-[80px] h-[145px] w-[22px] object-fill" />
-    <div className="absolute left-1/2 top-[116px] h-[28px] w-[65px] -translate-x-1/2 rounded-full border bg-black/70"><span className="absolute left-[8px] top-[5px] h-[18px] w-[18px] rounded-full bg-red-600" /></div>
-  </div>;
+function RaceStage({ secondsLeft, laneSpeeds }: { secondsLeft: number; laneSpeeds: number[] }) {
+  // 20s race window. progress 0 -> 1 over the window (slows near end).
+  const t = Math.min(1, Math.max(0, (20 - secondsLeft) / 20));
+  const eased = 1 - Math.pow(1 - t, 1.8);
+  return (
+    <div className="relative h-full overflow-hidden" style={{ background: "linear-gradient(180deg,#0a1530 0%,#1a0d2e 100%)" }}>
+      {/* Sky / countdown banner */}
+      <div className="absolute left-0 right-0 top-[6px] flex items-center justify-between px-3 text-[12px] font-bold">
+        <span className="rounded bg-black/60 px-2 py-[2px] text-[#ffdc48]">🏁 RACE STARTING</span>
+        <span className="rounded-full bg-red-600 px-3 py-[2px] text-white shadow-lg">{secondsLeft}s</span>
+      </div>
+      {/* Track */}
+      <img src={`${A}/track3_1-cf31d304.png`} className="absolute left-0 top-[34px] h-[200px] w-full object-cover opacity-90" />
+      {/* Lane separators */}
+      <div className="absolute left-0 right-0 top-[40px] h-[200px]">
+        {NUMBERS.map((n, i) => {
+          const laneTop = 40 + i * 17;
+          const speed = laneSpeeds[i] ?? 1;
+          const pos = Math.min(92, eased * 92 * speed);
+          const wobble = Math.sin((Date.now() / 120 + i * 7) * speed) * 1.5;
+          return (
+            <div key={n} className="absolute left-0 right-0 border-b border-dashed border-white/10" style={{ top: laneTop }}>
+              {/* Lane label */}
+              <span className="absolute -left-0 top-[1px] flex h-[14px] w-[18px] items-center justify-center rounded-[3px] bg-black/60 text-[10px] font-bold text-white">{n}</span>
+              {/* Bike emoji as racer (assets vary) */}
+              <span
+                className="absolute top-[-2px] text-[16px] transition-none"
+                style={{ left: `calc(20px + ${pos}%)`, transform: `translateY(${wobble}px)` }}
+              >
+                🏍️
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      {/* Finish line */}
+      <div className="absolute bottom-[12px] right-[14px] top-[40px] w-[6px]" style={{ background: "repeating-linear-gradient(0deg,#fff 0 6px,#000 6px 12px)" }} />
+      {/* "Place your bets close" notice when very close to settle */}
+      {secondsLeft <= 3 ? (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+          <span className="rounded-full bg-yellow-400 px-4 py-1 text-[14px] font-extrabold text-black animate-pulse">RESULT INCOMING…</span>
+        </div>
+      ) : null}
+    </div>
+  );
 }
+
 
 function RankPill({ label, n }: { label: string; n: number }) {
   return <span className="flex items-center gap-1 text-[16px] font-bold"><span>{label}</span><img src={`${A}/n_${n}-${NO[n - 1]}.png`} className="h-[28px] w-[28px] rounded-[5px]" /></span>;
