@@ -146,6 +146,93 @@ export type Database = {
           },
         ]
       }
+      motorace_bets: {
+        Row: {
+          amount: number
+          bet_type: string
+          bet_value: string
+          created_at: string
+          id: string
+          payout: number | null
+          period_id: string
+          session_id: string
+          settled_at: string | null
+          status: string
+        }
+        Insert: {
+          amount: number
+          bet_type: string
+          bet_value: string
+          created_at?: string
+          id?: string
+          payout?: number | null
+          period_id: string
+          session_id: string
+          settled_at?: string | null
+          status?: string
+        }
+        Update: {
+          amount?: number
+          bet_type?: string
+          bet_value?: string
+          created_at?: string
+          id?: string
+          payout?: number | null
+          period_id?: string
+          session_id?: string
+          settled_at?: string | null
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "motorace_bets_period_id_fkey"
+            columns: ["period_id"]
+            isOneToOne: false
+            referencedRelation: "motorace_periods"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "motorace_bets_session_id_fkey"
+            columns: ["session_id"]
+            isOneToOne: false
+            referencedRelation: "player_sessions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      motorace_periods: {
+        Row: {
+          created_at: string
+          ends_at: string
+          id: string
+          period_no: string
+          result_winner: number | null
+          settled_at: string | null
+          starts_at: string
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          ends_at: string
+          id?: string
+          period_no: string
+          result_winner?: number | null
+          settled_at?: string | null
+          starts_at: string
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          ends_at?: string
+          id?: string
+          period_no?: string
+          result_winner?: number | null
+          settled_at?: string | null
+          starts_at?: string
+          status?: string
+        }
+        Relationships: []
+      }
       operator_games: {
         Row: {
           created_at: string
@@ -233,6 +320,53 @@ export type Database = {
         }
         Relationships: []
       }
+      player_sessions: {
+        Row: {
+          balance: number
+          created_at: string
+          currency: string
+          display_name: string | null
+          expires_at: string
+          external_user_id: string
+          id: string
+          last_active_at: string
+          operator_id: string
+          token_hash: string
+        }
+        Insert: {
+          balance?: number
+          created_at?: string
+          currency?: string
+          display_name?: string | null
+          expires_at: string
+          external_user_id: string
+          id?: string
+          last_active_at?: string
+          operator_id: string
+          token_hash: string
+        }
+        Update: {
+          balance?: number
+          created_at?: string
+          currency?: string
+          display_name?: string | null
+          expires_at?: string
+          external_user_id?: string
+          id?: string
+          last_active_at?: string
+          operator_id?: string
+          token_hash?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "player_sessions_operator_id_fkey"
+            columns: ["operator_id"]
+            isOneToOne: false
+            referencedRelation: "operators"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_roles: {
         Row: {
           created_at: string
@@ -267,6 +401,20 @@ export type Database = {
         Returns: boolean
       }
       is_admin: { Args: { _user_id: string }; Returns: boolean }
+      next_motorace_period_no: { Args: never; Returns: string }
+      place_motorace_bet: {
+        Args: {
+          _amount: number
+          _bet_type: string
+          _bet_value: string
+          _period_id: string
+          _token_hash: string
+        }
+        Returns: {
+          bet_id: string
+          new_balance: number
+        }[]
+      }
     }
     Enums: {
       app_role: "super_admin" | "admin"
