@@ -107,7 +107,7 @@ function MotoracePage() {
         </header>
 
         <section className="relative h-[258px] overflow-hidden">
-          {showRace ? <RaceStage issue={issue} topThree={topThree} /> : <WaitingStage issue={issue} secondsLeft={secondsLeft} topThree={topThree} />}
+          {showRace ? <RaceStage secondsLeft={secondsLeft} laneSpeeds={laneSpeeds} /> : <WaitingStage issue={issue} secondsLeft={secondsLeft} topThree={topThree} />}
           <img src={`${A}/sound-134fdaf8.png`} alt="sound" className="absolute right-[18px] top-[14px] h-[17px] w-[17px]" />
           <div className="absolute bottom-0 left-0 right-0 flex h-[42px] items-center gap-2 px-3 text-[13px]" style={{ backgroundImage: `url(${A}/bottom-1ef06fc2.png)`, backgroundSize: "100% 100%" }}>
             <span className="mr-auto font-mono">{issue}</span>
