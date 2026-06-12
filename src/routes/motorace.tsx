@@ -124,12 +124,16 @@ function MotoracePage() {
         <div className="space-y-4">
           <h1 className="text-3xl font-bold">Moto Race</h1>
           <p className="text-zinc-400 max-w-sm">Try the game with a free demo session (₹10,000 play balance).</p>
-          <a
-            href="/api/public/v1/motorace/demo"
+          <button
+            onClick={async () => {
+              const r = await fetch("/api/public/v1/motorace/demo");
+              const j = await r.json();
+              if (j.token) window.location.href = `/motorace?token=${j.token}`;
+            }}
             className="inline-block rounded-xl bg-amber-500 px-6 py-3 font-bold text-zinc-950 hover:bg-amber-400"
           >
             ▶ Start Demo
-          </a>
+          </button>
           <p className="text-xs text-zinc-500">Operators: launch via <code>/api/public/v1/motorace/launch</code></p>
         </div>
       </div>
