@@ -116,7 +116,13 @@ function MotoracePage() {
             <div className="flex gap-6 text-[16px] font-bold">
               {[1, 2, 3].map((x) => <button key={x} onClick={() => setTab(x)} style={{ color: tab === x ? "#fff" : "#c7b7b2" }}>{x}{x === 1 ? "st" : x === 2 ? "nd" : "rd"} Number</button>)}
             </div>
-            <p className="mt-1 text-[14px]">Select {tab}st number <span style={{ color: "#fb5b5b" }}>(Odds 9.33X)</span></p>
+            <p className="mt-1 text-[14px]">Select {tab}st number <span style={{ color: "#fb5b5b" }}>(Odds 9X)</span></p>
+            <div className="mt-2 flex items-center gap-2">
+              <span className="text-[12px] text-[#c7b7b2]">Amount</span>
+              {AMOUNTS.map((a) => (
+                <button key={a} onClick={() => setAmount(a)} className="rounded-full px-3 py-1 text-[12px] font-bold" style={{ background: amount === a ? "#ffdc48" : "#2a2026", color: amount === a ? "#000" : "#fff" }}>₹{a}</button>
+              ))}
+            </div>
             <div className="mt-[15px] grid grid-cols-5 gap-x-[16px] gap-y-[18px]">
               {NUMBERS.map((n) => <button key={n} disabled={placing} onClick={() => placeBet("number", String(n))}><img src={`${A}/ball_${n}-${BALL[n - 1]}.png`} alt={`${n}`} /></button>)}
             </div>
