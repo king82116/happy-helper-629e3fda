@@ -137,7 +137,11 @@ function OperatorsPage() {
             )}
             {operators.map((op) => (
               <tr key={op.id} className="border-t border-border">
-                <td className="px-3 py-2 font-medium">{op.name}</td>
+                <td className="px-3 py-2 font-medium">
+                  <Link to="/operators/$operatorId" params={{ operatorId: op.id }} className="hover:underline">
+                    {op.name}
+                  </Link>
+                </td>
                 <td className="px-3 py-2 font-mono text-xs">{op.slug}</td>
                 <td className="px-3 py-2">
                   <span
