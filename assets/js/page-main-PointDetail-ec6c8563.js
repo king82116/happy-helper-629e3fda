@@ -1,2 +1,0 @@
-import{m as i,o}from"./common.modules-3e3c160a.js";import{_ as r}from"./page-activity-ActivityDetail-f8bc6e8e.js";import"./native/index-56323764.js";import"./en-4d7027b5.js";window.getBuildInfo=function(){return{buildTime:"4/19/2025, 2:01:23 PM",branch:" commitId:8f9a6b77f997bcd1b23c3d9fa0b70bf5488d0b97"}};const c={};function t(n,e){return o(),i("div")}const f=r(c,[["render",t],["__file","/usr/local/jenkins-prod/workspace/ar077-india-jalwa/src/views/main/PointDetail/index.vue"]]);export{f as default};
-//# sourceMappingURL=page-main-PointDetail-ec6c8563.js.map
