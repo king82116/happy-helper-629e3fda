@@ -24,8 +24,7 @@ async function authenticate(request: Request) {
 
   if (!key) return { error: jsonResponse({ error: "invalid_key" }, 401) };
   if (key.revoked_at) return { error: jsonResponse({ error: "key_revoked" }, 401) };
-  // @ts-expect-error inner join shape
-  const operator = key.operators;
+  const operator = (key as unknown as { operators: { id: string; name: string; slug: string; status: string } }).operators;
   if (!operator || operator.status !== "active") {
     return { error: jsonResponse({ error: "operator_inactive" }, 403) };
   }
