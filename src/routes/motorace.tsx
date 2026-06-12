@@ -20,14 +20,17 @@ export const Route = createFileRoute("/motorace")({
   head: () => ({ meta: [{ title: "MotoRace 1Min" }] }),
 });
 
+const AMOUNTS = [10, 100, 500, 1000];
+
 function MotoracePage() {
   const { token } = useSearch({ from: "/motorace" });
   const [state, setState] = useState<StateResponse | null>(null);
   const [now, setNow] = useState(Date.now());
   const [tab, setTab] = useState(1);
-  const [amount] = useState(10);
+  const [amount, setAmount] = useState(10);
   const [placing, setPlacing] = useState(false);
   const [toast, setToast] = useState("Loading demo…");
+  const [lastSettled, setLastSettled] = useState<string | null>(null);
 
   useEffect(() => {
     if (token) return;
@@ -41,12 +44,24 @@ function MotoracePage() {
     if (!token) return;
     const r = await fetch(`/api/public/v1/motorace/state?token=${token}`);
     const j = await r.json();
-    if (r.ok) setState(j);
-  }, [token]);
+    if (r.ok) {
+      setState(j);
+      const top = j.recent_results?.[0];
+      if (top && top.period_no !== lastSettled) {
+        if (lastSettled !== null) {
+          const myWin = j.my_bets?.find((b: { motorace_periods: { period_no: string }; status: string; payout: number }) => b.motorace_periods.period_no === top.period_no && b.status === "won");
+          setToast(myWin ? `🏆 You won ₹${Number(myWin.payout).toFixed(0)}! Winner: ${top.result_winner}` : `Winner: ${top.result_winner}`);
+          setTimeout(() => setToast(""), 3500);
+        }
+        setLastSettled(top.period_no);
+      }
+    }
+  }, [token, lastSettled]);
 
   useEffect(() => { fetchState(); }, [fetchState]);
   useEffect(() => { const i = setInterval(() => setNow(Date.now()), 250); return () => clearInterval(i); }, []);
-  useEffect(() => { const i = setInterval(fetchState, 3000); return () => clearInterval(i); }, [fetchState]);
+  useEffect(() => { const i = setInterval(fetchState, 2000); return () => clearInterval(i); }, [fetchState]);
+
 
   const secondsLeft = Math.max(0, Math.ceil(((state ? new Date(state.current_period.ends_at).getTime() : now + 60000) - now) / 1000));
   const showRace = secondsLeft <= 23 && secondsLeft > 0;
