@@ -17,12 +17,18 @@ function Landing() {
         Seamless wallet API, per-operator API keys with IP/domain whitelisting,
         and a central admin to manage operators and games.
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-3">
         <Link
           to="/auth"
           className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-fg hover:opacity-90"
         >
           Admin sign in
+        </Link>
+        <Link
+          to="/motorace"
+          className="rounded-md border border-border bg-surface px-4 py-2 text-sm font-medium hover:opacity-90"
+        >
+          Play Moto Race →
         </Link>
       </div>
       <ul className="mt-6 grid grid-cols-1 gap-2 text-sm text-muted sm:grid-cols-2">
