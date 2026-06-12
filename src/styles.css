@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b0f17;
+  --color-surface: #131a26;
+  --color-border: #1f2937;
+  --color-fg: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-primary: #f59e0b;
+  --color-primary-fg: #0b0f17;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-bg); color: var(--color-fg); font-family: ui-sans-serif, system-ui, sans-serif; }
