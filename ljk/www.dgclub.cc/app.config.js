@@ -1,1 +1,0 @@
-window.CONFIG=Object.freeze({"VITE_API_URL":"https://dogeclubgamesapi.com","VITE_BASE_LANGUAGE":"en","VITE_BASE_PROJECTNAME":"ar070","VITE_PNGSTART":"ar070","VITE_HOME":"electronic","VITE_MAINCOLOR":"redNewStyle","VITE_WINGO":"[30,1,2,3]","BASE_URL":"/","MODE":"production","DEV":true,"PROD":false});
