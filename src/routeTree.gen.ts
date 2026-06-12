@@ -16,6 +16,7 @@ import { Route as AuthenticatedOperatorsRouteImport } from './routes/_authentica
 import { Route as AuthenticatedGamesRouteImport } from './routes/_authenticated.games'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated.dashboard'
 import { Route as AuthenticatedOperatorsOperatorIdRouteImport } from './routes/_authenticated.operators.$operatorId'
+import { Route as ApiPublicV1PingRouteImport } from './routes/api/public/v1/ping'
 
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
@@ -52,6 +53,11 @@ const AuthenticatedOperatorsOperatorIdRoute =
     path: '/$operatorId',
     getParentRoute: () => AuthenticatedOperatorsRoute,
   } as any)
+const ApiPublicV1PingRoute = ApiPublicV1PingRouteImport.update({
+  id: '/api/public/v1/ping',
+  path: '/api/public/v1/ping',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/games': typeof AuthenticatedGamesRoute
   '/operators': typeof AuthenticatedOperatorsRouteWithChildren
   '/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
+  '/api/public/v1/ping': typeof ApiPublicV1PingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/games': typeof AuthenticatedGamesRoute
   '/operators': typeof AuthenticatedOperatorsRouteWithChildren
   '/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
+  '/api/public/v1/ping': typeof ApiPublicV1PingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/_authenticated/games': typeof AuthenticatedGamesRoute
   '/_authenticated/operators': typeof AuthenticatedOperatorsRouteWithChildren
   '/_authenticated/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
+  '/api/public/v1/ping': typeof ApiPublicV1PingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/operators'
     | '/operators/$operatorId'
+    | '/api/public/v1/ping'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -96,6 +106,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/operators'
     | '/operators/$operatorId'
+    | '/api/public/v1/ping'
   id:
     | '__root__'
     | '/'
@@ -105,12 +116,14 @@ export interface FileRouteTypes {
     | '/_authenticated/games'
     | '/_authenticated/operators'
     | '/_authenticated/operators/$operatorId'
+    | '/api/public/v1/ping'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthenticatedRoute: typeof AuthenticatedRouteWithChildren
   AuthRoute: typeof AuthRoute
+  ApiPublicV1PingRoute: typeof ApiPublicV1PingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -164,6 +177,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedOperatorsOperatorIdRouteImport
       parentRoute: typeof AuthenticatedOperatorsRoute
     }
+    '/api/public/v1/ping': {
+      id: '/api/public/v1/ping'
+      path: '/api/public/v1/ping'
+      fullPath: '/api/public/v1/ping'
+      preLoaderRoute: typeof ApiPublicV1PingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -202,6 +222,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRoute: AuthenticatedRouteWithChildren,
   AuthRoute: AuthRoute,
+  ApiPublicV1PingRoute: ApiPublicV1PingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
