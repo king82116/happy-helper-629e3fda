@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 
 export default defineConfig({
-  plugins: [tailwindcss(), tanstackStart({ target: "cloudflare-module" }), react()],
+  plugins: [tailwindcss(), tanstackStart(), react()],
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
