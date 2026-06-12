@@ -131,7 +131,32 @@ function MotoracePage() {
           </div>
         </section>
 
-        {state?.my_bets?.length ? <div className="mx-auto mt-4 w-[93%] rounded-[13px] p-3 text-sm" style={{ background: "#21191d" }}>Balance: ₹{state.session.balance.toLocaleString()}</div> : null}
+        <section className="mx-auto mt-4 w-[93%] rounded-[13px] p-3" style={{ background: "#21191d" }}>
+          <h3 className="mb-2 text-[14px] font-bold text-[#ffdc48]">Recent Results</h3>
+          <div className="flex flex-wrap gap-1">
+            {(state?.recent_results ?? []).slice(0, 10).map((r) => (
+              <span key={r.period_no} className="flex h-7 w-7 items-center justify-center rounded-full text-[12px] font-bold" style={{ background: r.result_winner && r.result_winner >= 6 ? "#dc2626" : "#16a34a", color: "#fff" }}>{r.result_winner}</span>
+            ))}
+            {!state?.recent_results?.length ? <span className="text-[12px] text-[#c7b7b2]">No results yet — wait for the timer.</span> : null}
+          </div>
+        </section>
+        {state?.my_bets?.length ? (
+          <section className="mx-auto mt-3 w-[93%] rounded-[13px] p-3" style={{ background: "#21191d" }}>
+            <h3 className="mb-2 text-[14px] font-bold text-[#ffdc48]">My Bets</h3>
+            <div className="space-y-1 text-[12px]">
+              {state.my_bets.slice(0, 8).map((b) => (
+                <div key={b.id} className="flex items-center justify-between border-b border-white/5 pb-1">
+                  <span className="font-mono text-[10px] text-[#c7b7b2]">{b.motorace_periods.period_no.slice(-6)}</span>
+                  <span>{b.bet_type}:{b.bet_value}</span>
+                  <span>₹{b.amount}</span>
+                  <span style={{ color: b.status === "won" ? "#22c55e" : b.status === "lost" ? "#ef4444" : "#ffdc48" }}>
+                    {b.status === "pending" ? "…" : b.status === "won" ? `+₹${Number(b.payout).toFixed(0)}` : "lost"}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
         {toast ? <div className="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-full bg-black/80 px-4 py-2 text-sm text-white">{toast}</div> : null}
       </div>
     </main>
