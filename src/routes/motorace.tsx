@@ -121,9 +121,16 @@ function MotoracePage() {
   if (!token) {
     return (
       <div className="min-h-screen bg-zinc-950 text-zinc-100 grid place-items-center p-6 text-center">
-        <div>
-          <h1 className="text-2xl font-bold mb-2">Moto Race</h1>
-          <p className="text-zinc-400">Missing session token. Open this game from your operator&apos;s launch URL.</p>
+        <div className="space-y-4">
+          <h1 className="text-3xl font-bold">Moto Race</h1>
+          <p className="text-zinc-400 max-w-sm">Try the game with a free demo session (₹10,000 play balance).</p>
+          <a
+            href="/api/public/v1/motorace/demo"
+            className="inline-block rounded-xl bg-amber-500 px-6 py-3 font-bold text-zinc-950 hover:bg-amber-400"
+          >
+            ▶ Start Demo
+          </a>
+          <p className="text-xs text-zinc-500">Operators: launch via <code>/api/public/v1/motorace/launch</code></p>
         </div>
       </div>
     );
