@@ -1,0 +1,30 @@
+# Archives (often exceed GitHub 100MB limit)
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# Dependencies
+node_modules/
+vendor/
+
+# Env / secrets (keep local configs out of git)
+.env
+.env.*
+!.env.example
+
+# Build / cache
+dist/
+build/
+.cache/
+*.map
+
+# Temp / tooling
+agent-tools/
+agent-transcripts/

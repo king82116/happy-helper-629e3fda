@@ -1,0 +1,293 @@
+ {
+        "gameCustomTypeLists": [],
+        "gameLists": [
+            {
+                "gameID": "707",
+                "gameNameEn": "3 Patti Classic",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/707_20250210142254071.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "710",
+                "gameNameEn": "Rummy",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/710_20250210142312293.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "563",
+                "gameNameEn": "Three Pictures",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/563_20250210142918946.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "921",
+                "gameNameEn": "Andar Bahar",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/921_20250210142530573.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "561",
+                "gameNameEn": "3 Cards",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/561_20250210142727041.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "557",
+                "gameNameEn": "Battle Blackjack",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/557_20250210142657758.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "701",
+                "gameNameEn": "365 Poker",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/701_20250210143113012.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "918",
+                "gameNameEn": "Jhandi Munda",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/918_20250210142518389.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "556",
+                "gameNameEn": "Star Ox",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/556_20250210142642746.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "562",
+                "gameNameEn": "13 Cards",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/562_20250210142741048.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "789",
+                "gameNameEn": "Pok Deng",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/789_20250210142850015.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "565",
+                "gameNameEn": "Texas Poker",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/565_20250210142946541.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "706",
+                "gameNameEn": "3 Pictures Special",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/706_20250210143217673.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "705",
+                "gameNameEn": "Casino Ox",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/705_20250210143201613.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "566",
+                "gameNameEn": "Casino 3 Pictures",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/566_20250210142959829.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "559",
+                "gameNameEn": "Run Fast",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/559_20250210142713153.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "917",
+                "gameNameEn": "Thai Hi-Lo",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/917_20250210142506257.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "570",
+                "gameNameEn": "2-plyr Fight Landlord",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/570_20250210143044153.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "555",
+                "gameNameEn": "Ox Banker",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/555_20250210142630027.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "702",
+                "gameNameEn": "8 Cards",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/702_20250210143127828.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "666",
+                "gameNameEn": "Happy Ox",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/666_20250210143058261.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "449",
+                "gameNameEn": "2-plyr Mahjong",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/449_20250210142553312.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "913",
+                "gameNameEn": "Thai Fish Prawn Crab",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/913_20250210142438936.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "452",
+                "gameNameEn": "Guangdong Mahjong",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/452_20250210142605729.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "445",
+                "gameNameEn": "Red Mahjong",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/445_20250210142542083.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "564",
+                "gameNameEn": "Mahjong Titan",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/564_20250210142932446.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "567",
+                "gameNameEn": "Bursting QX",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/567_20250210143012425.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "569",
+                "gameNameEn": "Rapid 3 Pictures",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/569_20250210143027067.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "703",
+                "gameNameEn": "Bursting 3 Pictures",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/703_20250210143141953.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "912",
+                "gameNameEn": "Vietnam Fish Prawn Crab",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/912_20250210142423424.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "548",
+                "gameNameEn": "Bursting Baccarat",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/548_20250210142617774.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "916",
+                "gameNameEn": "Vietnam Tài-Xỉu",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/Card365/916_20250210142453957.png",
+                "vendorId": 19,
+                "vendorCode": "Card365",
+                "imgUrl2": null,
+                "customGameType": 0
+            }
+        ]
+    }

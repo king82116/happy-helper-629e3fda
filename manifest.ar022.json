@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "NnGames",
+	"version": "1.2",
+	"display": "standalone",
+	"background_color": "#fff",
+	"description": "game for NnGames",
+	"icons": [
+		{
+			"src": "/ar022@192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/ar022@512.png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/",
+	"safari_specific": {
+		"safari_extension_version": 2,
+		"permissions": ["cross-origin-content", "web-page"]
+	}
+}

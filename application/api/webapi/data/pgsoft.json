@@ -1,0 +1,797 @@
+{
+    "gameCustomTypeLists": [],
+    "gameLists": [
+        {
+            "gameNameEn": "Mahjong Ways",
+            "gameID": "1189baca156e1bbbecc3b26651a63565",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mahjong-Ways_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Mahjong Ways 2",
+            "gameID": "ba2adf72179e1ead9e3dae8f0a7d4c07",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mahjong-Ways2_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Treasures of Aztec",
+            "gameID": "2fa9a84d096d6ff0bab53f81b79876c8",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Treasures-of-Aztec_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Leprechaun Riches",
+            "gameID": "fb2a2ac51303c0a0801dbe6a72d936f7",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Leprechaun-Riches_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Lucky Neko",
+            "gameID": "e1b4c6b95746d519228744771f15fe4b",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Lucky-Neko_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Captain's Bounty",
+            "gameID": "cd29b9906a852ce26b53b6d6d81037d4",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Captains-Bounty_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Queen of Bounty",
+            "gameID": "83a6890cf84e4c5a6bacf96d5355d472",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Queen-of-Bounty_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Wild Bandito",
+            "gameID": "95fc290bb05c07b5aad1a054eba4dcc4",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Bandito_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Ways of the Qilin",
+            "gameID": "fedfca553a97a791a3a41c4f1e3bff58",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ways-of-the-Qilin_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Dragon Hatch",
+            "gameID": "4afef91d3addb9ce5107abaf3342b9a5",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Dragon-Hatch_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Double Fortune",
+            "gameID": "3810e528e0abb8ce1cd7ddc2ece005c0",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Double-Fortune_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "The Great Icescape",
+            "gameID": "99f07ed2226f37e22570325fc1c078f2",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/The-Great-Icescape_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Caishen Wins",
+            "gameID": "82a810ba99a5fb3e23fc514afebd6314",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Caishen-Wins_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Ganesha Fortune",
+            "gameID": "c4b57c6dcfac5c8a31b9174523103c8c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ganesha-Fortune_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Dreams of Macau",
+            "gameID": "0ef82ebe6f819619f53b83e218b9452c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Dreams-of-Macau_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Fortune Ox",
+            "gameID": "8db4eb6d781f915eebab2a26133db0e9",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Ox_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Wild Bounty Showdown",
+            "gameID": "c98bb64436826fe9a2c62955ff70cba9",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Bounty-Showdown_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Prosperity Fortune Tree",
+            "gameID": "0da0fda6981138234f03cb665984c07e",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Prosperity-Fortune-Tree_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Diner Delights",
+            "gameID": "7e6298970ad1c3c983e495be86833dee",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Diner-Delights_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Egypt's Book of Mystery",
+            "gameID": "1babfc499be7bc670f11695e8668b59d",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Egypts-Book-of-Mystery_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Phoenix Rises",
+            "gameID": "21c55c4cd28bb1ebf465fcfaf413477c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Phoenix-Rises_app-img_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Wild Fireworks",
+            "gameID": "fb8888b2dec33fe9d28996376580b410",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Fireworks_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Thai River Wonders",
+            "gameID": "fcc6918b79eddf49984d4f5f650c8ded",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Thai-River-Wonders_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Bali Vacation",
+            "gameID": "c79544b2cf7a3326c85f6ab5bdf53d25",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Bali-Vacation_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Crypto Gold",
+            "gameID": "b1e11902cecf38023f2916569c32040a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Crypto-Gold_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Jurassic Kingdom",
+            "gameID": "4eef5090166a6889956a630321713366",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Jurassic-Kingdom_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Cocktail Nights",
+            "gameID": "5bea5667515cb7a31f6f07dc3caa13b1",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Cocktail-Nights_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Fortune Tiger",
+            "gameID": "9a8482565ce343ad3ea7fc4bc42cb043",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Tiger_app-img_rounded.png"
+          },
+          {
+            "gameNameEn": "Speed Winner",
+            "gameID": "386a9d8e184d9bc7c7aca32a8a5db686",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Speed-Winner_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Legend of Perseus",
+            "gameID": "6e37f6e1b6042c2147866c4d86206979",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Legend-of-Perseus_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Honey Trap of Diao Chan",
+            "gameID": "cd0cc7e653b42133d57145d5505d4e96",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Honey-Trap-of-Diao-Chan_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Fortune Gods",
+            "gameID": "d3aad7ca1486eb3f145e2c43f38b559c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Gods_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Win Win Won",
+            "gameID": "43862cc768882dff441a60b26dcec1c0",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Win-Win-Won_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Medusa II",
+            "gameID": "1c6d773d6a616d74e2573343a5dcecc3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Medusa-II_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Tree of Fortune",
+            "gameID": "e7d7e8396619459db2c178ed72f81049",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Tree-of-Fortune_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Medusa",
+            "gameID": "dcc55631d793ad44be98d21c99f7e361",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Medusa_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Plushie Frenzy",
+            "gameID": "b34c5e632cdc53fc67f1a5eec5758af7",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Plushie-Frenzy_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Gem Saviour",
+            "gameID": "9e795df6bdf093a144e714fd35afbb7a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Gem-Saviour_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Hood vs Wolf",
+            "gameID": "222ce90a04a2246eecd5216454f9792f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Hood-vs-Wolf_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Hotpot",
+            "gameID": "2fea77daa52fd607ed0abe816e4dc7c7",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Hotpot_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Dragon Legend",
+            "gameID": "b990b58ed9e1aa341b3164f49bcb1517",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Dragon-Legend_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Mr. Hallow-Win",
+            "gameID": "12e94577c713a431ef7765394bb9be2f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/MrHallow-Win_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Legend of Hou Yi",
+            "gameID": "1ed6fe92243975f73c944342119a1336",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Legend-of-Hou-Yi_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Prosperity Lion",
+            "gameID": "1fcb23fa9fac3ca32e20adfe90028de3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Prosperity-Lion_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Hip Hop Panda",
+            "gameID": "5fdbd55ac67eea146b93939ee060cd54",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Hip-Hop-Panda_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Santa's Gift Rush",
+            "gameID": "864edc20e589a738c632f8a49a2e02a3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Santas-Gift-Rush_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Baccarat Deluxe",
+            "gameID": "22c3b8df172b40ac24a7e9c909e0e50e",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Baccarat-Deluxe_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Gem Saviour Sword",
+            "gameID": "4bbb563e9cf0211a3433beeebe70f35b",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Gem-Saviour-Sword_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Piggy Gold",
+            "gameID": "a9d874dd5305212b09845fc88f72e02d",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Piggy-Gold_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Symbols of Egypt",
+            "gameID": "0c7c636333c3c0807d2da26e1f0c8cd1",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Symbols-of-Egypt_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Emperor's Favour",
+            "gameID": "12766ca09f503fec11f391199fce5e24",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Emperors-Favour_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Ganesha Gold",
+            "gameID": "8dcea650a5a4d96530a77e6df8f61923",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ganesha-Gold_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Jungle Delight",
+            "gameID": "232e8e0c74f9bb16ab676e5ed49d72b4",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Jungle-Delight_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Journey to the Wealth",
+            "gameID": "139f7ae7151a8bd388511bd8b7ce0c40",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Journey-to-the-Wealth_img_Rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Flirting Scholar",
+            "gameID": "0c884fde76cbc187f2797c4f76532220",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Flirting-Scholar_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Ninja vs Samurai",
+            "gameID": "2eb712d4bb30e4594032ebf1464618b1",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ninja-vs-Samurai_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Muay Thai Champion",
+            "gameID": "82127ece1232c6762c81fedb73c99756",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Muay-Thai-Champion_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Dragon Tiger Luck",
+            "gameID": "3d3dd6e2fd819832528108e0af197c43",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Dragon-Tiger-Luck_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Fortune Mouse",
+            "gameID": "8e5a4dd7da06fb68165d13f8bcd06328",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Mouse_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Reel Love",
+            "gameID": "813138051d990c0c21fb78015b14cbef",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Reel-Love_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Gem Saviour Conquest",
+            "gameID": "07d9e7940f430557447cb19692ae4409",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Gem-Saviour-Conquest_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Shaolin Soccer",
+            "gameID": "da483088a7f719026e93ba95c5547a8c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Shaolin-Soccer_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Candy Burst",
+            "gameID": "27237d7e8d9b183c92fa9f6ab9832edc",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Candy-Burst_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Bikini Paradise",
+            "gameID": "18f7f3fdda3e951989731b7204572a8f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Bikini-Paradise_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Genie's 3 Wishes",
+            "gameID": "16e34863dada5465919b289f83c494a1",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Genies-3-Wishes_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Circus Delight",
+            "gameID": "5a11d239f4368b4ec21d31e5979d85cf",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Circus-Delight_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Secrets of Cleopatra",
+            "gameID": "7028ed373d5bffeeb22fa90c4066bd9e",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Secrets-of-Cleopatra_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Vampire's Charm",
+            "gameID": "8912f36ea0ca97fc6911fc21b3be6f6a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Vampires-Charm_app-img_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Jewels of Prosperity",
+            "gameID": "f55a666db274fcf210dd69801ae7e87a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Jewels-of-Prosperity_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Jack Frost's Winter",
+            "gameID": "0a8772ad753cfce2c03c0599ad60c74c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Jack-Frosts-Winter_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Galactic Gems",
+            "gameID": "5d26d9ec03d3bc031e49abd5b0ffbdda",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Galactic-Gems_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Guardians of Ice and Fire",
+            "gameID": "4e2f6b7602035730e0e8ee89675a417c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Guardians-of-Ice-and-Fire_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Opera Dynasty",
+            "gameID": "c9ec6bce856aafad85f7de5405f7b1c3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Opera-Dynasty_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Majestic Treasures",
+            "gameID": "894240c0ef08d5c2e29b231013e1514d",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Majestic-Treasures_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Candy Bonanza",
+            "gameID": "bbe2320adc5c506e7e56a2d24d96a252",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Candy-Bonanza-img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Heist  Stakes",
+            "gameID": "a4a67f1259cabed59e338e30149ceb0f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Heist-Stakes_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Rise of Apollo",
+            "gameID": "3da7ee034052b8cb90c6ca060652ded4",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Rise-of-Apollo_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Mermaid Riches",
+            "gameID": "a9d7a5af417a94caf554170e6b345e57",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mermaid-Riches-img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Raider Jane's Crypt of Fortune",
+            "gameID": "24d8e1dbc5cface0907f5a21ecd56753",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Raider-Janes-Crypt-of-Fortune_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Supermarket Spree",
+            "gameID": "7ef03497fc0b21c34b137e85b1e409cd",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Supermarket-Spree_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Buffalo Win",
+            "gameID": "2818a7add6e10b2ec5f938d7ae0efb04",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Buffalo-Win_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Legendary Monkey King",
+            "gameID": "5cdeba2ab48d6ba345b1a4de8e2776b5",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Legendary-Monkey-King_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Spirited Wonders",
+            "gameID": "87a05c81af5635bed41765bfd076ee15",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Spirited-Wonders_app-img_rounded.png"
+          },
+          {
+            "gameNameEn": "Emoji Riches",
+            "gameID": "101ca3ff83b149dcf3439309e9b32142",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Emoji-Riches_app-img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Mask Carnival",
+            "gameID": "adf297c2666c69b3abc3b61618d593b8",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mask-Carnival_app-img_rounded.png"
+          },
+          {
+            "gameNameEn": "Oriental Prosperity",
+            "gameID": "23b43b58e11aadb1f27fd05ba41e9819",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Oriental-Prosperity_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Garuda Gems",
+            "gameID": "aa609892f551de2053e92427dc4ae17f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Garuda-Gems_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Destiny of Sun & Moon",
+            "gameID": "617ca04ffcffbc543a1a30cacdac98fa",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Destiny-of-Sun-and-Moon_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Butterfly Blossom",
+            "gameID": "116989bb267a72035bd01818c5496126",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Butterfly-Blossom_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Rooster Rumble",
+            "gameID": "5c371d9fca6109c954de93ac7986c5db",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Rooster-Rumble_app-img_rounded.png"
+          },
+          {
+            "gameNameEn": "The Queen's Banquet",
+            "gameID": "1b317b5f8bf2ca0cc609307810407426",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/The-Queens-Banquet_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Battleground Royale",
+            "gameID": "e9f92f6edc2dac2d08bc345ee036260c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Battleground-Royale_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Win Win Fish Prawn Crab",
+            "gameID": "9b344f0b2a9bda427684be60597d2fc6",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Win-Win-Fish-Prawn-Crab_rounded_1024.png"
+          },
+          {
+            "gameNameEn": "Lucky Piggy",
+            "gameID": "66fadac68ed45e23def86c06cc811820",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Lucky-Piggy_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Wild Coaster",
+            "gameID": "a06f1a154698243bf2484853d38e5fbb",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Coaster_app-img_rounded.png"
+          },
+          {
+            "gameNameEn": "Totem Wonders",
+            "gameID": "a03c6e7a918132b50f9caa297df1752d",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Totem-Wonders_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Alchemy Gold",
+            "gameID": "9860c865264dcacad1ef37176cdefc1a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Alchemy-Gold_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Asgardian Rising",
+            "gameID": "08d92dc2ca14f42c681b44297386d600",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Asgardian-Rising_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Midas Fortune",
+            "gameID": "a2fd6b0cadc8fefccfb0d063b1f81d85",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Midas-Fortune_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Fortune Rabbit",
+            "gameID": "e175cdd3215a02f5539cc8354a149b75",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Rabbit_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Rave Party Fever",
+            "gameID": "901aa1b709a937f6a04baddb98a8d1d3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Rave-Party-Fever_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Hawaiian Tiki",
+            "gameID": "35d6743ae5d73a3359f143cbb44ede09",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Hawaiian-Tiki_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Bakery Bonanza",
+            "gameID": "d0fe7aa2f7ed5778190b1e60d94e6773",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Bakery-Bonanza_app-img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Songkran Splash",
+            "gameID": "894b1c7609629cf9b3d127d9dbaa372c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Songkran-Splash_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Mystical Spirits",
+            "gameID": "3b2d4d1ae24b1c3ad29556a6cf875f11",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mystical-Spirits_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Super Golf Drive",
+            "gameID": "d37dde2adb52e0ea708c0ccd6877b1b3",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Super-Golf-Drive_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Lucky Clover Lady",
+            "gameID": "288f290554746bb32322a79b96ecdcbb",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Lucky-Clover-Lady_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Fruity Candy",
+            "gameID": "9f2c89ae5b7c0894c9ee9e223e3fd9d8",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fruity-Candy_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Cruise Royale",
+            "gameID": "8489d662ccc07a2e9677729f76e26ae8",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Cruise-Royale_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Safari Wilds",
+            "gameID": "97c6f05ef6a0a34cad10d5e00edc909c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Safari-Wilds_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Gladiator's Glory",
+            "gameID": "2454dc7cfdc651b7318950453bc3f617",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Gladiators-Glory_appimg_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Ninja Racoon Frenzy",
+            "gameID": "6d1937d2e7f87306333443c99ac2c03f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ninja-Racoon-Frenzy_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Ultimate Striker",
+            "gameID": "4415d83cd9c74299814c1473db83bf7f",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Ultimate-Striker_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Wild Heist Cashout",
+            "gameID": "028bd89b2120e880bcf1968c37277460",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Heist-Cashout_appimg_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Forge of Wealth",
+            "gameID": "f8ec50fc2ef996e6c182fd2fe59a16fa",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Forge-of-Wealth_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Mafia Mayhem",
+            "gameID": "c7b3016c70a06ddbb2355a3aee4179d0",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mafia-Mayhem_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Werewolf Hunt",
+            "gameID": "2ac70bee7b47c172381e55f7e644d92e",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Werewolfs-Hunt_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Tsar Treasures",
+            "gameID": "1eb6a959aadf0491f4a648762d8d262a",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Tsar-Treasures_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Fortune Dragon",
+            "gameID": "c5435a8a73707a3a8bb4fe8baaaef3d2",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Fortune-Dragon_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Dragon Hatch 2",
+            "gameID": "910f25689073d17680be453d7ed90ce2",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Dragon-Hatch2_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Gemstones Gold",
+            "gameID": "877c9b2ec1c5e0505129315948f9bbfa",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Gemstones-Gold_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Cash Mania",
+            "gameID": "c8bbb41367b3971ed3467c2f0c2627a4",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Cash-Mania_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Wild Ape #3258",
+            "gameID": "9b93cb0dc46d847864c87ed42a3428bb",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Wild-Ape_rounded.png"
+          },
+          {
+            "gameNameEn": "Pinata Wins",
+            "gameID": "f08cc025e23ee049b570517867c74be0",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Pinata-Wins_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Mystic Potion",
+            "gameID": "e61bde75d590e943d2c5c6d432b29b46",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Mystic-Potion.png"
+          },
+          {
+            "gameNameEn": "Anubis Wrath",
+            "gameID": "c268154a85669eea35aa46387834ac76",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/Anubis-Wrath.png"
+          },
+          {
+            "gameNameEn": "Chicky Run",
+            "gameID": "c3e600005f72f1d1cabe758e206daf57",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/chicky-run_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Zombie Outbreak",
+            "gameID": "83b6eceea77859c14426b05480b96c34",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/zombie-outbreaks_appimg_rounded.png"
+          },
+          {
+            "gameNameEn": "Futebol Fever",
+            "gameID": "314afef87ff2974867234ac317b37f4c",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/futebol-fever_img_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Shark Bounty",
+            "gameID": "42cf824884f8ecdaf39862c9a15bf1f1",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/shark-hunter_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Yakuza Honor",
+            "gameID": "e4772d4ef1de4217915c678d0d1722a8",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/yakuza-honor_1024_rounded.png"
+          },
+          {
+            "gameNameEn": "Wings of Iguazu",
+            "gameID": "6ae667b26f908e5ebe8976ca334fd472",
+            "customGameType": 0,
+            "img": "https://huidu-bucket.s3.ap-southeast-1.amazonaws.com/api/pg/wings-of-iguazu_img_1024_rounded.png"
+          }
+    ]
+}

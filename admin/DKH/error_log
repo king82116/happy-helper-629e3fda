@@ -1,0 +1,12 @@
+[24-Jun-2025 07:23:26 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php:136
+Stack trace:
+#0 {main}
+  thrown in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php on line 136
+[24-Jun-2025 07:23:32 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php:136
+Stack trace:
+#0 {main}
+  thrown in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php on line 136
+[24-Jun-2025 07:23:42 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php:136
+Stack trace:
+#0 {main}
+  thrown in /home/alldemof/public_html/91.alldemo.fun/rohita/DKH/fully_detailed_subdata.php on line 136

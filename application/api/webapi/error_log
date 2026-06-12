@@ -1,0 +1,28 @@
+[26-May-2026 18:10:57 Asia/Kolkata] Proxy API Error: Connection timed out after 10001 milliseconds
+[26-May-2026 18:10:57 Asia/Kolkata] Proxy API failed for vendor: TB_Chess, game: a04d1f3eb8ccec8a4823bdf18e3f0e84, user: OMrz2HPkC9tRq4pwvf4btS1Nr7HmdroqPlB7X3qAdwK11gun16kFPKt2xEmOXPBdpbmr9LY2Os0
+[26-May-2026 12:50:03 UTC] PHP Deprecated:  Optional parameter $homeUrl declared before required parameter $proxyConfig is implicitly treated as a required parameter in /home/josh296689/public_html/application/api/webapi/GetGameUrl.php on line 45
+[26-May-2026 12:50:03 UTC] PHP Deprecated:  Optional parameter $callbackUrl declared before required parameter $proxyConfig is implicitly treated as a required parameter in /home/josh296689/public_html/application/api/webapi/GetGameUrl.php on line 45
+[26-May-2026 18:20:23 Asia/Kolkata] Proxy API Error: Connection timed out after 20000 milliseconds
+[26-May-2026 18:20:23 Asia/Kolkata] Proxy API failed for vendor: TB_Chess, game: a04d1f3eb8ccec8a4823bdf18e3f0e84, user: OMrz2HPkC9tRq4pwvf4btS1Nr7HmdroqPlB7X3qAdwK11gun16kFPKt2xEmOXPBdpbmr9LY2Os0
+[26-May-2026 18:20:38 Asia/Kolkata] Proxy API Error: Connection timed out after 20001 milliseconds
+[26-May-2026 18:20:38 Asia/Kolkata] Proxy API failed for vendor: TB_Chess, game: a04d1f3eb8ccec8a4823bdf18e3f0e84, user: OMrz2HPkC9tRq4pwvf4btS1Nr7HmdroqPlB7X3qAdwK11gun16kFPKt2xEmOXPBdpbmr9LY2Os0
+[26-May-2026 18:20:44 Asia/Kolkata] Proxy API Error: Connection timed out after 20001 milliseconds
+[26-May-2026 18:20:44 Asia/Kolkata] Proxy API failed for vendor: TB_Chess, game: 7a762edbe411ebc9be416870a734bd03, user: OMrz2HPkC9tRq4pwvf4btS1Nr7HmdroqPlB7X3qAdwK11gun16kFPKt2xEmOXPBdpbmr9LY2Os0
+[26-May-2026 18:32:24 Asia/Kolkata] PHP Warning:  Undefined array key "payTypeId" in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[26-May-2026 18:32:24 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[26-May-2026 18:49:49 Asia/Kolkata] PHP Warning:  Undefined array key "payTypeId" in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[26-May-2026 18:49:49 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[26-May-2026 13:20:38 UTC] PHP Deprecated:  Optional parameter $homeUrl declared before required parameter $proxyConfig is implicitly treated as a required parameter in /home/josh296689/public_html/application/api/webapi/GetGameUrl.php on line 45
+[26-May-2026 13:20:38 UTC] PHP Deprecated:  Optional parameter $callbackUrl declared before required parameter $proxyConfig is implicitly treated as a required parameter in /home/josh296689/public_html/application/api/webapi/GetGameUrl.php on line 45
+[26-May-2026 18:50:58 Asia/Kolkata] Proxy API Error: Connection timed out after 20001 milliseconds
+[26-May-2026 18:50:58 Asia/Kolkata] Proxy API failed for vendor: INOUT, game: c4b2813f6bbc5abf502ddfb857e604eb, user: 1NxYJjh37x6NsC1ErhJXENYP0WYG7zqB5KIwj4BtYBkcKYXxyB3y0TzELNZ5DCpaM8qLgBqHWJY
+[27-May-2026 14:01:49 Asia/Kolkata] PHP Warning:  Undefined array key "payTypeId" in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[27-May-2026 14:01:49 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetRechargeTypes.php on line 27
+[27-May-2026 14:05:00 Asia/Kolkata] PHP Warning:  Undefined array key "amount" in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[27-May-2026 14:05:00 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:33:26 Asia/Kolkata] PHP Warning:  Undefined array key "amount" in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:33:26 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:34:15 Asia/Kolkata] PHP Warning:  Undefined array key "amount" in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:34:15 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:35:11 Asia/Kolkata] PHP Warning:  Undefined array key "amount" in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30
+[28-May-2026 14:35:11 Asia/Kolkata] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/josh296689/public_html/application/api/webapi/GetSafeUserAmount.php on line 30

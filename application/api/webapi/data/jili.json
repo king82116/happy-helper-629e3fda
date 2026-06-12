@@ -1,0 +1,739 @@
+{
+        "gameCustomTypeLists": [],
+        "gameLists": [
+            {
+                "gameID": "db249defce63610fccabfa829a405232",
+                "gameNameEn": "Money Coming",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/51.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+			{
+                "gameID": "edef29b5eda8e2eaf721d7315491c51d",
+                "gameNameEn": "Go Rush",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/224.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "a990de177577a2e6a889aaac5f57b429",
+                "gameNameEn": "Fortune Gems",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/109.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "61d46add6841aad4758288d68015eca6",
+                "gameNameEn": "SevenSevenSeven",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/27.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "984615c9385c42b3dad0db4a9ef89070",
+                "gameNameEn": "Charge Buffalo",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/47.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "e794bf5717aca371152df192341fe68b",
+                "gameNameEn": "Royal Fishing",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/1.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "8c62471fd4e28c084a61811a3958f7a1",
+                "gameNameEn": "Crazy777",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/35.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "bdfb23c974a2517198c5443adeea77a8",
+                "gameNameEn": "Super Ace",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/49.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "71c68a4ddb63bdc8488114a08e603f1c",
+                "gameNameEn": "Happy Fishing",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/82.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            
+            {
+                "gameID": "caacafe3f64a6279e10a378ede09ff38",
+                "gameNameEn": "Mega Fishing",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/74.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "c3f86b78938eab1b7f34159d98796e88",
+                "gameNameEn": "Golden Bank",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/45.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "ba858ec8e3b5e2b4da0d16b3a2330ca7",
+                "gameNameEn": "Lucky Coming",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/91.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "2cc3b68cbcfacac2f7ef2fe19abc3c22",
+                "gameNameEn": "Candy Baby",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/23.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "b92f491a63ac84b106b056e9d46d35c5",
+                "gameNameEn": "Super Rich",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/100.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "11e330c2b23f106815f3b726d04e4316",
+                "gameNameEn": "JILI Caishen",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/144.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "f02ede19c5953fce22c6098d860dadf4",
+                "gameNameEn": "Boom Legend",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/71.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "d84ef530121953240116e3b2e93f6af4",
+                "gameNameEn": "Lucky Goldbricks",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/48.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "981f5f9675002fbeaaf24c4128b938d7",
+                "gameNameEn": "Boxing King",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/77.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "eef3e28f0e3e7b72cbca61e7924d00f1",
+                "gameNameEn": "Dinosaur Tycoon",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/42.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "e333695bcff28acdbecc641ae6ee2b23",
+                "gameNameEn": "Bombing Fishing",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/20.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "eba92b1d3abd5f0d37dfbe112abdf0e2",
+                "gameNameEn": "Mega Ace",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/134.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "6a7e156ceec5c581cd6b9251854fe504",
+                "gameNameEn": "Fortune Tree",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/6.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "9ec2a18752f83e45ccedde8dfeb0f6a7",
+                "gameNameEn": "All-star Fishing",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/119.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "490096198e28f770a3f85adb6ee49e0f",
+                "gameNameEn": "Golden Empire",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/103.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "cc686634b4f953754b306317799f1f39",
+                "gameNameEn": "Ali Baba",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/110.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "6b283c434fd44250d83b7c2420f164f9",
+                "gameNameEn": "Book of Gold",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/87.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "2a5d731e0fd60f52873a24ece11f2c0b",
+                "gameNameEn": "Gold Rush",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/137.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "1200b82493e4788d038849bca884d773",
+                "gameNameEn": "Dragon Fortune",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/60.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "bbae6016f79f3df74e453eda164c08a4",
+                "gameNameEn": "Dinosaur Tycoon II",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/212.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "9a3b65e2ae5343df349356d548f3fc4b",
+                "gameNameEn": "Wild Ace",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/181.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "4db0ec24ff55a685573c888efed47d7f",
+                "gameNameEn": "Jungle King",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/16.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "28374b7ad7c91838a46404f1df046e5a",
+                "gameNameEn": "World Cup",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/146.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "c74b3cbda5d16f77523e41c25104e602",
+                "gameNameEn": "TWIN WINS",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/106.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "a47b17970036b37c1347484cf6956920",
+                "gameNameEn": "Hyper Burst",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/14.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "70999d5bcf2a1d1f1fb8c82e357317f4",
+                "gameNameEn": "Pirate Queen",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/164.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "2c17b7c4e2ce5b8bebf4bd10e3e958d7",
+                "gameNameEn": "Medusa",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/101.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "c7a69ab382bd1ff0e6eb65b90a793bdd",
+                "gameNameEn": "Pharaoh Treasure",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/85.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "5c2383ef253f9c36dacec4b463d61622",
+                "gameNameEn": "MAYAN EMPIRE",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/135.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "8de99455c2f23f6827666fd798eb80ef",
+                "gameNameEn": "Golden Queen",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/58.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "aab3048abc6a88e0759679fbe26e6a8d",
+                "gameNameEn": "Bone Fortune",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/126.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "39775cdc4170e56c5f768bdee8b4fa00",
+                "gameNameEn": "Bonus Hunter",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/142.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            
+            {
+                "gameID": "1ed896aae4bdc78c984021307b1dd177",
+                "gameNameEn": "Happy Taxi",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/116.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "893669898cd25d9da589a384f1d004df",
+                "gameNameEn": "Lucky Ball",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/13.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "7e6aa773fa802aaa9cb1f2fac464736e",
+                "gameNameEn": "Thor X",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/130.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "69082f28fcd46cbfd10ce7a0051f24b6",
+                "gameNameEn": "Crazy Hunter",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/92.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "c6955c14f6c28a6c2a0c28274fec7520",
+                "gameNameEn": "Dragon Treasure",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/46.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "1d1f267e3a078ade8e5ccd56582ac94f",
+                "gameNameEn": "Secret Treasure",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/78.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "5a962d0e31e0d4c0798db5f331327e4f",
+                "gameNameEn": "XiYangYang",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/43.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "a57a8d5176b54d4c825bd1eee8ab34df",
+                "gameNameEn": "Crazy FaFaFa",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/40.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "54c41adcf43fdb6d385e38bc09cd77ca",
+                "gameNameEn": "Fa Fa Fa",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/21.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "8488c76ee2afb8077fbd7eec62721215",
+                "gameNameEn": "FortunePig",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/33.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "78e29705f7c6084114f46a0aeeea1372",
+                "gameNameEn": "Night City",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/37.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "fd369a4a7486ff303beea267ec5c8eff",
+                "gameNameEn": "Monkey Party",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/67.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "f301fe0b22d1540b1f215d282b20c642",
+                "gameNameEn": "Golden Joker",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/183.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "9a391758f755cb30ff973e08b2df6089",
+                "gameNameEn": "Neko Fortune",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/145.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "6d35789b2f419c1db3926350d57c58d8",
+                "gameNameEn": "Samba",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/136.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "d2b48fe98ac2956eeefd2bc4f7e0335a",
+                "gameNameEn": "Master Tiger",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/176.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            
+            {
+                "gameID": "09699fd0de13edbb6c4a194d7494640b",
+                "gameNameEn": "Fengshen",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/38.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "4b1d7ffaf9f66e6152ea93a6d0e4215b",
+                "gameNameEn": "War Of Dragons",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/9.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "a78d2ed972aab8ba06181cc43c54a425",
+                "gameNameEn": "Bubble Beauty",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/30.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "8a4b4929e796fda657a2d38264346509",
+                "gameNameEn": "Agent Ace",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/115.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            
+            {
+                "gameID": "795d0cae623cbf34d7f1aa93bbcded28",
+                "gameNameEn": "Shanghai Beauty",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/17.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "c845960c81d27d7880a636424e53964d",
+                "gameNameEn": "Hot Chilli",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/5.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "8c4ebb3dc5dcf7b7fe6a26d5aadd2c3d",
+                "gameNameEn": "Bao boon chin",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/36.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "00d92d5cec10cf85623938222a6c2bb6",
+                "gameNameEn": "Crazy Pusher",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/153.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "6409b758471b6df30c6b137b49f4d92e",
+                "gameNameEn": "Hawaii Beauty",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/26.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "756cf3c73a323b4bfec8d14864e3fada",
+                "gameNameEn": "Gem Party",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/10.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "b4fe8cea772a7643551a12de806472e8",
+                "gameNameEn": "Roma X",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/102.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "24da72b49b0dd0e5cbef9579d09d8981",
+                "gameNameEn": "Chin Shi Huang",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/2.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "21ef8a7ddd39836979170a2e7584e333",
+                "gameNameEn": "God Of Martial",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/4.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "d505541d522aa5ca01fc5e97cfcf2116",
+                "gameNameEn": "Party Night",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/76.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "2f0c5f96cda3c6e16b3929dd6103df8e",
+                "gameNameEn": "Wild Racer",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/166.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "68724804a3cd30c749e460256b462f00",
+                "gameNameEn": "Shōgun",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/376.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "731e642b1fee94725e7313f3dfba8f45",
+                "gameNameEn": "Lucky Jaguar",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/421.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            
+            {
+                "gameID": "72ce7e04ce95ee94eef172c0dfd6dc17",
+                "gameNameEn": "Mines",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/229.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "4bf1d6a75d91c725f89aa5985544a087",
+                "gameNameEn": "Lucky Doggy",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/374.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "Golden Bank 2",
+                "gameNameEn": "Golden Bank 2",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/378.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "921cf987632d65b5e41ab5dffe16d95a",
+                "gameNameEn": "Fruity Wheel",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/422.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "6bb74b0a57a66850b79ab5c93864cac3",
+                "gameNameEn": "Treasure Quest",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/307.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "ca72a7ad1ca4fa2cdc9a1c49c8bb3332",
+                "gameNameEn": "Coin Tree",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/392.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            },
+            {
+                "gameID": "25bff08b69ccd31c238a627b53afff36",
+                "gameNameEn": "3 Coin Wild Horse",
+                "img": "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/485_20250212172617629.png",
+                "vendorId": 18,
+                "vendorCode": "JILI",
+                "imgUrl2": null,
+                "customGameType": 0
+            }
+        ]
+    }

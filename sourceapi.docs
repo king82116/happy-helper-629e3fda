@@ -1,0 +1,227 @@
+ Integration Guide
+Connect your backend to SOURCEAPI with three calls: game list → launch URL → (optional) your webhook for bet/win events. Your API key, secret, and base URL are on API Details.
+
+Before you integrate
+Copy api_key, api_secret, and base URL from API Details.
+Always send vendor_code as "sourceapi" (lowercase) on every request.
+Use the same member_account string every time for a given player so wallet callbacks match your users.
+Know your supplier codes (e.g. CQ9, SPADE): send supplier_code on launch if your operator gave you a list per game; otherwise the platform default may apply.
+All requests are POST with Content-Type: application/json unless noted.
+If the operator enabled IP or domain restrictions, whitelist your server in advance.
+API overview
+Endpoint	Purpose
+POST /api/gameList	List games (from catalog) grouped by category.
+POST /api/getGameUrl	Get a one-time game launch URL for a player.
+POST /api/placeBet	Same launch flow with explicit transfer_id; balance checks apply.
+You do not implement the upstream wallet callback URL — SOURCEAPI does. Register https://sourceapi.com/api/callback/sourceapi only with your games operator, not in your own code.
+
+Authentication
+Send credentials on every request using one of these styles.
+
+Option A — JSON body (recommended)
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  ...
+}
+Option B — HTTP headers
+X-Api-Key: YOUR_API_KEY
+X-Api-Secret: YOUR_API_SECRET
+You may combine headers with a JSON body that omits duplicate keys.
+
+Two “vendor” concepts
+Field	Value	Meaning
+vendor_code	Always sourceapi	Tells SOURCEAPI which integration to use. Required on all client API calls.
+supplier_code or provider	e.g. CQ9	Upstream game vendor code for launch. Use when your catalog or operator requires it. Either field name works.
+POST /api/gameList
+Returns games from the catalog. Use game_uid from the response when calling getGameUrl.
+
+Parameters
+Field	Required	Description
+api_key	Yes*	Your API key.
+api_secret	Yes*	Your API secret.
+vendor_code	Yes	Must be sourceapi.
+currency	No	Filter/context (e.g. USD, INR).
+category / category_name	No	Filter by category name (exact match, case-insensitive).
+search	No	Search in game names / UIDs.
+limit_per_category / limit	No	Max games per category; 0 = no limit.
+* Or send via X-Api-Key / X-Api-Secret headers.
+
+Example request
+POST https://sourceapi.com/api/gameList
+Content-Type: application/json
+
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  "vendor_code": "sourceapi",
+  "currency": "INR"
+}
+Example success response
+{
+  "success": true,
+  "categories": [
+    {
+      "name": "Slots",
+      "icon": null,
+      "games": [
+        {
+          "game_uid": "MY_GAME_001",
+          "name": "Sample Slot",
+          "image_url": "https://..."
+        }
+      ],
+      "games_count": 1
+    }
+  ]
+}
+POST /api/getGameUrl
+Creates a session and returns game_launch_url. Open it in a browser or WebView. member_account, game_uid, and vendor_code are required.
+
+Parameters
+Field	Required	Description
+api_key / api_secret	Yes*	Credentials.
+vendor_code	Yes	sourceapi.
+member_account	Yes	Stable player ID in your system.
+game_uid	Yes	From gameList (your public game id).
+amount / credit_amount	No	Initial display / session amount (numeric). Wallet rules still apply.
+currency_code	Recommended	ISO-style code (e.g. matches your account).
+supplier_code or provider	Conditional	Upstream vendor when not using platform default.
+language	No	e.g. en, zh.
+home_url	No	Where the player returns after exiting the game.
+callback_url	No	Override default upstream callback base (rare).
+Example request
+POST https://sourceapi.com/api/getGameUrl
+Content-Type: application/json
+
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  "vendor_code": "sourceapi",
+  "member_account": "player_123",
+  "game_uid": "MY_GAME_001",
+  "amount": 100,
+  "currency_code": "INR",
+  "supplier_code": "CQ9",
+  "language": "en",
+  "home_url": "https://yoursite.com/lobby"
+}
+Example success response
+{
+  "success": true,
+  "game_launch_url": "https://...",
+  "data": { }
+}
+POST /api/placeBet
+Same seamless launch path with an explicit transfer_id for idempotency in your logs. Response shape matches getGameUrl success (plus transfer_id and payload).
+
+Extra / important parameters
+Field	Required	Description
+member_account	Yes	Player id.
+transfer_id / transaction_id	No	Your unique id; generated if omitted.
+Example request
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  "vendor_code": "sourceapi",
+  "member_account": "player_123",
+  "game_uid": "MY_GAME_001",
+  "amount": 100,
+  "transfer_id": "shop_order_98765",
+  "currency_code": "INR",
+  "supplier_code": "CQ9"
+}
+Example success response
+{
+  "success": true,
+  "game_launch_url": "https://...",
+  "transfer_id": "shop_order_98765",
+  "payload": { }
+}
+Copy-paste examples
+cURL — game list
+curl -s -X POST "https://sourceapi.com/api/gameList" \
+  -H "Content-Type: application/json" \
+  -d '{"api_key":"YOUR_KEY","api_secret":"YOUR_SECRET","vendor_code":"sourceapi","currency":"USD"}'
+cURL — launch game
+curl -s -X POST "https://sourceapi.com/api/getGameUrl" \
+  -H "Content-Type: application/json" \
+  -d '{"api_key":"YOUR_KEY","api_secret":"YOUR_SECRET","vendor_code":"sourceapi","member_account":"u1","game_uid":"MY_GAME_001","amount":100,"currency_code":"USD","supplier_code":"CQ9"}'
+JavaScript (fetch) — launch
+const res = await fetch("https://sourceapi.com/api/getGameUrl", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    api_key: "YOUR_KEY",
+    api_secret: "YOUR_SECRET",
+    vendor_code: "sourceapi",
+    member_account: "player_123",
+    game_uid: "MY_GAME_001",
+    amount: 100,
+    currency_code: "USD",
+    supplier_code: "CQ9",
+  }),
+});
+const data = await res.json();
+if (data.success && data.game_launch_url) {
+  window.location.href = data.game_launch_url;
+}
+Calling from the browser exposes your secret — use only for quick tests. Production: call SOURCEAPI from your server.
+
+PHP — launch and redirect
+$ch = curl_init('https://sourceapi.com/api/getGameUrl');
+curl_setopt_array($ch, [
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => json_encode([
+        'api_key' => 'YOUR_API_KEY',
+        'api_secret' => 'YOUR_API_SECRET',
+        'vendor_code' => 'sourceapi',
+        'member_account' => 'player_123',
+        'game_uid' => 'MY_GAME_001',
+        'amount' => 100,
+        'currency_code' => 'USD',
+        'supplier_code' => 'CQ9',
+    ]),
+    CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
+    CURLOPT_RETURNTRANSFER => true,
+]);
+$res = json_decode(curl_exec($ch), true);
+if (!empty($res['success']) && !empty($res['game_launch_url'])) {
+    header('Location: ' . $res['game_launch_url']);
+    exit;
+}
+http_response_code(502);
+echo $res['error'] ?? 'Launch failed';
+Your webhook (optional)
+Set your HTTPS URL under API Details. SOURCEAPI POSTs JSON when a bet, win, or cancel is processed so you can sync your own ledger.
+
+{
+  "event": "bet_win",
+  "type": "bet",
+  "member_account": "player_123",
+  "round_id": "round_1",
+  "transaction_id": "tx_abc",
+  "bet_amount": 1,
+  "win_amount": 0,
+  "amount": 1,
+  "balance_after": 99.5,
+  "provider": "sourceapi",
+  "currency_code": "INR",
+  "timestamp": 1708416000
+}
+type values: bet, win, cancel. Respond with HTTP 200 quickly; failures are logged.
+
+Errors and HTTP status
+HTTP	Typical cause
+200	Success.
+400	Missing/invalid fields, unknown game, insufficient wallet balance for launch.
+401	Missing or wrong api_key / api_secret.
+402	Prepaid / GGR balance too low (see error and optional code: INSUFFICIENT_GGR_BALANCE).
+403	IP/domain not allowed, or PROVIDER_NOT_ENABLED (manager accounts).
+404	vendor_code not mapped or game not found.
+429	Too many requests (rate limit).
+500	Server or upstream error — message in error.
+Error bodies are JSON, e.g. {"error":"Unknown vendor_code"}. Always check HTTP status and parse error before redirecting users to a game.
+
+Need help?
+Confirm vendor_code is exactly sourceapi, credentials match API Details, and game_uid exists in the game list response. For launch errors mentioning brand_id or upstream config, contact your platform administrator.

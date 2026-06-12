@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "DiuWin",
+	"version": "1.2",
+	"display": "standalone",
+	"background_color": "#fff",
+	"description": "DiuWin",
+	"icons": [
+		{
+			"src": "/ar062@192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/ar062@512.png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/#/"
+}
