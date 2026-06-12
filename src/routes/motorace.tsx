@@ -90,9 +90,10 @@ function MotoracePage() {
   return (
     <main className="min-h-screen" style={{ background: "#9195a3", fontFamily: "Arial, sans-serif" }}>
       <div className="mx-auto min-h-screen overflow-hidden" style={{ maxWidth: 400, background: "#120d14", color: "#fff" }}>
-        <header className="relative flex h-[46px] items-center justify-center px-4" style={{ background: "#0b070e" }}>
-          <button className="absolute left-4 text-[30px] leading-none" onClick={() => history.back()} style={{ color: "#ffdf62" }}>‹</button>
-          <h1 className="text-[20px] font-normal">MotoRace 1Min</h1>
+        <header className="relative flex h-[46px] items-center justify-between px-4" style={{ background: "#0b070e" }}>
+          <button className="text-[30px] leading-none" onClick={() => history.back()} style={{ color: "#ffdf62" }}>‹</button>
+          <h1 className="text-[18px] font-normal">MotoRace 1Min</h1>
+          <span className="text-[14px] font-bold" style={{ color: "#ffdf62" }}>₹{(state?.session.balance ?? 0).toLocaleString()}</span>
         </header>
 
         <section className="relative h-[258px] overflow-hidden">
