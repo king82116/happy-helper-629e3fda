@@ -64,13 +64,23 @@ function MotoracePage() {
 
 
   const secondsLeft = Math.max(0, Math.ceil(((state ? new Date(state.current_period.ends_at).getTime() : now + 60000) - now) / 1000));
-  const showRace = secondsLeft <= 23 && secondsLeft > 0;
+  const showRace = secondsLeft <= 20;
   const issue = state?.current_period.period_no || "2026061210001907";
   const last = state?.recent_results?.[0]?.result_winner || 4;
   const topThree = useMemo(() => {
     const rest = NUMBERS.filter((n) => n !== last);
     return [last, rest[(last + 1) % rest.length], rest[(last + 4) % rest.length]];
   }, [last]);
+  // Pre-generated random lane speeds per period so each race looks unique but stable
+  const laneSpeeds = useMemo(() => {
+    const seed = state?.current_period.id || "default";
+    let h = 0; for (const c of seed) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+    return NUMBERS.map((_, i) => {
+      h = (h * 1103515245 + 12345) >>> 0;
+      return 0.85 + ((h % 1000) / 1000) * 0.35; // 0.85 - 1.20 speed multiplier
+    });
+  }, [state?.current_period.id]);
+
 
   const placeBet = async (betType: string, betValue: string) => {
     if (!state || !token || placing) return;
@@ -97,7 +107,7 @@ function MotoracePage() {
         </header>
 
         <section className="relative h-[258px] overflow-hidden">
-          {showRace ? <RaceStage issue={issue} topThree={topThree} /> : <WaitingStage issue={issue} secondsLeft={secondsLeft} topThree={topThree} />}
+          {showRace ? <RaceStage secondsLeft={secondsLeft} laneSpeeds={laneSpeeds} /> : <WaitingStage issue={issue} secondsLeft={secondsLeft} topThree={topThree} />}
           <img src={`${A}/sound-134fdaf8.png`} alt="sound" className="absolute right-[18px] top-[14px] h-[17px] w-[17px]" />
           <div className="absolute bottom-0 left-0 right-0 flex h-[42px] items-center gap-2 px-3 text-[13px]" style={{ backgroundImage: `url(${A}/bottom-1ef06fc2.png)`, backgroundSize: "100% 100%" }}>
             <span className="mr-auto font-mono">{issue}</span>
@@ -177,14 +187,53 @@ function WaitingStage({ issue, secondsLeft, topThree }: { issue: string; seconds
   </div>;
 }
 
-function RaceStage({ issue, topThree }: { issue: string; topThree: number[] }) {
-  return <div className="relative h-full" style={{ background: "#111" }}>
-    <div className="absolute left-0 top-[8px] flex h-[29px] items-center gap-[2px] px-4"><img src={`${A}/number-3f825650.png`} className="h-[27px] w-[180px]" /><span className="ml-1 text-[16px] font-bold">1st</span></div>
-    <img src={`${A}/track3_1-cf31d304.png`} className="absolute left-0 top-[46px] h-[167px] w-full object-cover" />
-    <img src={`${A}/car-b1876e4f.png`} className="absolute left-[13px] top-[80px] h-[145px] w-[22px] object-fill" />
-    <div className="absolute left-1/2 top-[116px] h-[28px] w-[65px] -translate-x-1/2 rounded-full border bg-black/70"><span className="absolute left-[8px] top-[5px] h-[18px] w-[18px] rounded-full bg-red-600" /></div>
-  </div>;
+function RaceStage({ secondsLeft, laneSpeeds }: { secondsLeft: number; laneSpeeds: number[] }) {
+  // 20s race window. progress 0 -> 1 over the window (slows near end).
+  const t = Math.min(1, Math.max(0, (20 - secondsLeft) / 20));
+  const eased = 1 - Math.pow(1 - t, 1.8);
+  return (
+    <div className="relative h-full overflow-hidden" style={{ background: "linear-gradient(180deg,#0a1530 0%,#1a0d2e 100%)" }}>
+      {/* Sky / countdown banner */}
+      <div className="absolute left-0 right-0 top-[6px] flex items-center justify-between px-3 text-[12px] font-bold">
+        <span className="rounded bg-black/60 px-2 py-[2px] text-[#ffdc48]">🏁 RACE STARTING</span>
+        <span className="rounded-full bg-red-600 px-3 py-[2px] text-white shadow-lg">{secondsLeft}s</span>
+      </div>
+      {/* Track */}
+      <img src={`${A}/track3_1-cf31d304.png`} className="absolute left-0 top-[34px] h-[200px] w-full object-cover opacity-90" />
+      {/* Lane separators */}
+      <div className="absolute left-0 right-0 top-[40px] h-[200px]">
+        {NUMBERS.map((n, i) => {
+          const laneTop = 40 + i * 17;
+          const speed = laneSpeeds[i] ?? 1;
+          const pos = Math.min(92, eased * 92 * speed);
+          const wobble = Math.sin((Date.now() / 120 + i * 7) * speed) * 1.5;
+          return (
+            <div key={n} className="absolute left-0 right-0 border-b border-dashed border-white/10" style={{ top: laneTop }}>
+              {/* Lane label */}
+              <span className="absolute -left-0 top-[1px] flex h-[14px] w-[18px] items-center justify-center rounded-[3px] bg-black/60 text-[10px] font-bold text-white">{n}</span>
+              {/* Bike emoji as racer (assets vary) */}
+              <span
+                className="absolute top-[-2px] text-[16px] transition-none"
+                style={{ left: `calc(20px + ${pos}%)`, transform: `translateY(${wobble}px)` }}
+              >
+                🏍️
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      {/* Finish line */}
+      <div className="absolute bottom-[12px] right-[14px] top-[40px] w-[6px]" style={{ background: "repeating-linear-gradient(0deg,#fff 0 6px,#000 6px 12px)" }} />
+      {/* "Place your bets close" notice when very close to settle */}
+      {secondsLeft <= 3 ? (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+          <span className="rounded-full bg-yellow-400 px-4 py-1 text-[14px] font-extrabold text-black animate-pulse">RESULT INCOMING…</span>
+        </div>
+      ) : null}
+    </div>
+  );
 }
+
 
 function RankPill({ label, n }: { label: string; n: number }) {
   return <span className="flex items-center gap-1 text-[16px] font-bold"><span>{label}</span><img src={`${A}/n_${n}-${NO[n - 1]}.png`} className="h-[28px] w-[28px] rounded-[5px]" /></span>;
