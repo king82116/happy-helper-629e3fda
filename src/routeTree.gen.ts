@@ -21,6 +21,7 @@ import { Route as ApiPublicV1PingRouteImport } from './routes/api/public/v1/ping
 import { Route as ApiPublicV1MotoraceStateRouteImport } from './routes/api/public/v1/motorace.state'
 import { Route as ApiPublicV1MotoraceSettleRouteImport } from './routes/api/public/v1/motorace.settle'
 import { Route as ApiPublicV1MotoraceLaunchRouteImport } from './routes/api/public/v1/motorace.launch'
+import { Route as ApiPublicV1MotoraceDemoRouteImport } from './routes/api/public/v1/motorace.demo'
 import { Route as ApiPublicV1MotoraceBetRouteImport } from './routes/api/public/v1/motorace.bet'
 
 const MotoraceRoute = MotoraceRouteImport.update({
@@ -86,6 +87,11 @@ const ApiPublicV1MotoraceLaunchRoute =
     path: '/api/public/v1/motorace/launch',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicV1MotoraceDemoRoute = ApiPublicV1MotoraceDemoRouteImport.update({
+  id: '/api/public/v1/motorace/demo',
+  path: '/api/public/v1/motorace/demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicV1MotoraceBetRoute = ApiPublicV1MotoraceBetRouteImport.update({
   id: '/api/public/v1/motorace/bet',
   path: '/api/public/v1/motorace/bet',
@@ -102,6 +108,7 @@ export interface FileRoutesByFullPath {
   '/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
   '/api/public/v1/ping': typeof ApiPublicV1PingRoute
   '/api/public/v1/motorace/bet': typeof ApiPublicV1MotoraceBetRoute
+  '/api/public/v1/motorace/demo': typeof ApiPublicV1MotoraceDemoRoute
   '/api/public/v1/motorace/launch': typeof ApiPublicV1MotoraceLaunchRoute
   '/api/public/v1/motorace/settle': typeof ApiPublicV1MotoraceSettleRoute
   '/api/public/v1/motorace/state': typeof ApiPublicV1MotoraceStateRoute
@@ -116,6 +123,7 @@ export interface FileRoutesByTo {
   '/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
   '/api/public/v1/ping': typeof ApiPublicV1PingRoute
   '/api/public/v1/motorace/bet': typeof ApiPublicV1MotoraceBetRoute
+  '/api/public/v1/motorace/demo': typeof ApiPublicV1MotoraceDemoRoute
   '/api/public/v1/motorace/launch': typeof ApiPublicV1MotoraceLaunchRoute
   '/api/public/v1/motorace/settle': typeof ApiPublicV1MotoraceSettleRoute
   '/api/public/v1/motorace/state': typeof ApiPublicV1MotoraceStateRoute
@@ -132,6 +140,7 @@ export interface FileRoutesById {
   '/_authenticated/operators/$operatorId': typeof AuthenticatedOperatorsOperatorIdRoute
   '/api/public/v1/ping': typeof ApiPublicV1PingRoute
   '/api/public/v1/motorace/bet': typeof ApiPublicV1MotoraceBetRoute
+  '/api/public/v1/motorace/demo': typeof ApiPublicV1MotoraceDemoRoute
   '/api/public/v1/motorace/launch': typeof ApiPublicV1MotoraceLaunchRoute
   '/api/public/v1/motorace/settle': typeof ApiPublicV1MotoraceSettleRoute
   '/api/public/v1/motorace/state': typeof ApiPublicV1MotoraceStateRoute
@@ -148,6 +157,7 @@ export interface FileRouteTypes {
     | '/operators/$operatorId'
     | '/api/public/v1/ping'
     | '/api/public/v1/motorace/bet'
+    | '/api/public/v1/motorace/demo'
     | '/api/public/v1/motorace/launch'
     | '/api/public/v1/motorace/settle'
     | '/api/public/v1/motorace/state'
@@ -162,6 +172,7 @@ export interface FileRouteTypes {
     | '/operators/$operatorId'
     | '/api/public/v1/ping'
     | '/api/public/v1/motorace/bet'
+    | '/api/public/v1/motorace/demo'
     | '/api/public/v1/motorace/launch'
     | '/api/public/v1/motorace/settle'
     | '/api/public/v1/motorace/state'
@@ -177,6 +188,7 @@ export interface FileRouteTypes {
     | '/_authenticated/operators/$operatorId'
     | '/api/public/v1/ping'
     | '/api/public/v1/motorace/bet'
+    | '/api/public/v1/motorace/demo'
     | '/api/public/v1/motorace/launch'
     | '/api/public/v1/motorace/settle'
     | '/api/public/v1/motorace/state'
@@ -189,6 +201,7 @@ export interface RootRouteChildren {
   MotoraceRoute: typeof MotoraceRoute
   ApiPublicV1PingRoute: typeof ApiPublicV1PingRoute
   ApiPublicV1MotoraceBetRoute: typeof ApiPublicV1MotoraceBetRoute
+  ApiPublicV1MotoraceDemoRoute: typeof ApiPublicV1MotoraceDemoRoute
   ApiPublicV1MotoraceLaunchRoute: typeof ApiPublicV1MotoraceLaunchRoute
   ApiPublicV1MotoraceSettleRoute: typeof ApiPublicV1MotoraceSettleRoute
   ApiPublicV1MotoraceStateRoute: typeof ApiPublicV1MotoraceStateRoute
@@ -280,6 +293,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicV1MotoraceLaunchRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/v1/motorace/demo': {
+      id: '/api/public/v1/motorace/demo'
+      path: '/api/public/v1/motorace/demo'
+      fullPath: '/api/public/v1/motorace/demo'
+      preLoaderRoute: typeof ApiPublicV1MotoraceDemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/v1/motorace/bet': {
       id: '/api/public/v1/motorace/bet'
       path: '/api/public/v1/motorace/bet'
@@ -328,6 +348,7 @@ const rootRouteChildren: RootRouteChildren = {
   MotoraceRoute: MotoraceRoute,
   ApiPublicV1PingRoute: ApiPublicV1PingRoute,
   ApiPublicV1MotoraceBetRoute: ApiPublicV1MotoraceBetRoute,
+  ApiPublicV1MotoraceDemoRoute: ApiPublicV1MotoraceDemoRoute,
   ApiPublicV1MotoraceLaunchRoute: ApiPublicV1MotoraceLaunchRoute,
   ApiPublicV1MotoraceSettleRoute: ApiPublicV1MotoraceSettleRoute,
   ApiPublicV1MotoraceStateRoute: ApiPublicV1MotoraceStateRoute,
