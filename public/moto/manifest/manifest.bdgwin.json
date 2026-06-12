@@ -7,11 +7,11 @@
 	"description": "bigvclub",
 	"icons": [
 		{
-			"src": "/manifest/bdgwin@192.png",
+			"src": "/moto/manifest/bdgwin@192.png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/manifest/bdgwin@512.png",
+			"src": "/moto/manifest/bdgwin@512.png",
 			"sizes": "512x512"
 		}
 	],
