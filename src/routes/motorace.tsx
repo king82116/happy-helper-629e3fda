@@ -20,14 +20,17 @@ export const Route = createFileRoute("/motorace")({
   head: () => ({ meta: [{ title: "MotoRace 1Min" }] }),
 });
 
+const AMOUNTS = [10, 100, 500, 1000];
+
 function MotoracePage() {
   const { token } = useSearch({ from: "/motorace" });
   const [state, setState] = useState<StateResponse | null>(null);
   const [now, setNow] = useState(Date.now());
   const [tab, setTab] = useState(1);
-  const [amount] = useState(10);
+  const [amount, setAmount] = useState(10);
   const [placing, setPlacing] = useState(false);
   const [toast, setToast] = useState("Loading demo…");
+  const [lastSettled, setLastSettled] = useState<string | null>(null);
 
   useEffect(() => {
     if (token) return;
@@ -41,12 +44,24 @@ function MotoracePage() {
     if (!token) return;
     const r = await fetch(`/api/public/v1/motorace/state?token=${token}`);
     const j = await r.json();
-    if (r.ok) setState(j);
-  }, [token]);
+    if (r.ok) {
+      setState(j);
+      const top = j.recent_results?.[0];
+      if (top && top.period_no !== lastSettled) {
+        if (lastSettled !== null) {
+          const myWin = j.my_bets?.find((b: { motorace_periods: { period_no: string }; status: string; payout: number }) => b.motorace_periods.period_no === top.period_no && b.status === "won");
+          setToast(myWin ? `🏆 You won ₹${Number(myWin.payout).toFixed(0)}! Winner: ${top.result_winner}` : `Winner: ${top.result_winner}`);
+          setTimeout(() => setToast(""), 3500);
+        }
+        setLastSettled(top.period_no);
+      }
+    }
+  }, [token, lastSettled]);
 
   useEffect(() => { fetchState(); }, [fetchState]);
   useEffect(() => { const i = setInterval(() => setNow(Date.now()), 250); return () => clearInterval(i); }, []);
-  useEffect(() => { const i = setInterval(fetchState, 3000); return () => clearInterval(i); }, [fetchState]);
+  useEffect(() => { const i = setInterval(fetchState, 2000); return () => clearInterval(i); }, [fetchState]);
+
 
   const secondsLeft = Math.max(0, Math.ceil(((state ? new Date(state.current_period.ends_at).getTime() : now + 60000) - now) / 1000));
   const showRace = secondsLeft <= 23 && secondsLeft > 0;
@@ -75,9 +90,10 @@ function MotoracePage() {
   return (
     <main className="min-h-screen" style={{ background: "#9195a3", fontFamily: "Arial, sans-serif" }}>
       <div className="mx-auto min-h-screen overflow-hidden" style={{ maxWidth: 400, background: "#120d14", color: "#fff" }}>
-        <header className="relative flex h-[46px] items-center justify-center px-4" style={{ background: "#0b070e" }}>
-          <button className="absolute left-4 text-[30px] leading-none" onClick={() => history.back()} style={{ color: "#ffdf62" }}>‹</button>
-          <h1 className="text-[20px] font-normal">MotoRace 1Min</h1>
+        <header className="relative flex h-[46px] items-center justify-between px-4" style={{ background: "#0b070e" }}>
+          <button className="text-[30px] leading-none" onClick={() => history.back()} style={{ color: "#ffdf62" }}>‹</button>
+          <h1 className="text-[18px] font-normal">MotoRace 1Min</h1>
+          <span className="text-[14px] font-bold" style={{ color: "#ffdf62" }}>₹{(state?.session.balance ?? 0).toLocaleString()}</span>
         </header>
 
         <section className="relative h-[258px] overflow-hidden">
@@ -100,7 +116,13 @@ function MotoracePage() {
             <div className="flex gap-6 text-[16px] font-bold">
               {[1, 2, 3].map((x) => <button key={x} onClick={() => setTab(x)} style={{ color: tab === x ? "#fff" : "#c7b7b2" }}>{x}{x === 1 ? "st" : x === 2 ? "nd" : "rd"} Number</button>)}
             </div>
-            <p className="mt-1 text-[14px]">Select {tab}st number <span style={{ color: "#fb5b5b" }}>(Odds 9.33X)</span></p>
+            <p className="mt-1 text-[14px]">Select {tab}st number <span style={{ color: "#fb5b5b" }}>(Odds 9X)</span></p>
+            <div className="mt-2 flex items-center gap-2">
+              <span className="text-[12px] text-[#c7b7b2]">Amount</span>
+              {AMOUNTS.map((a) => (
+                <button key={a} onClick={() => setAmount(a)} className="rounded-full px-3 py-1 text-[12px] font-bold" style={{ background: amount === a ? "#ffdc48" : "#2a2026", color: amount === a ? "#000" : "#fff" }}>₹{a}</button>
+              ))}
+            </div>
             <div className="mt-[15px] grid grid-cols-5 gap-x-[16px] gap-y-[18px]">
               {NUMBERS.map((n) => <button key={n} disabled={placing} onClick={() => placeBet("number", String(n))}><img src={`${A}/ball_${n}-${BALL[n - 1]}.png`} alt={`${n}`} /></button>)}
             </div>
@@ -109,7 +131,32 @@ function MotoracePage() {
           </div>
         </section>
 
-        {state?.my_bets?.length ? <div className="mx-auto mt-4 w-[93%] rounded-[13px] p-3 text-sm" style={{ background: "#21191d" }}>Balance: ₹{state.session.balance.toLocaleString()}</div> : null}
+        <section className="mx-auto mt-4 w-[93%] rounded-[13px] p-3" style={{ background: "#21191d" }}>
+          <h3 className="mb-2 text-[14px] font-bold text-[#ffdc48]">Recent Results</h3>
+          <div className="flex flex-wrap gap-1">
+            {(state?.recent_results ?? []).slice(0, 10).map((r) => (
+              <span key={r.period_no} className="flex h-7 w-7 items-center justify-center rounded-full text-[12px] font-bold" style={{ background: r.result_winner && r.result_winner >= 6 ? "#dc2626" : "#16a34a", color: "#fff" }}>{r.result_winner}</span>
+            ))}
+            {!state?.recent_results?.length ? <span className="text-[12px] text-[#c7b7b2]">No results yet — wait for the timer.</span> : null}
+          </div>
+        </section>
+        {state?.my_bets?.length ? (
+          <section className="mx-auto mt-3 w-[93%] rounded-[13px] p-3" style={{ background: "#21191d" }}>
+            <h3 className="mb-2 text-[14px] font-bold text-[#ffdc48]">My Bets</h3>
+            <div className="space-y-1 text-[12px]">
+              {state.my_bets.slice(0, 8).map((b) => (
+                <div key={b.id} className="flex items-center justify-between border-b border-white/5 pb-1">
+                  <span className="font-mono text-[10px] text-[#c7b7b2]">{b.motorace_periods.period_no.slice(-6)}</span>
+                  <span>{b.bet_type}:{b.bet_value}</span>
+                  <span>₹{b.amount}</span>
+                  <span style={{ color: b.status === "won" ? "#22c55e" : b.status === "lost" ? "#ef4444" : "#ffdc48" }}>
+                    {b.status === "pending" ? "…" : b.status === "won" ? `+₹${Number(b.payout).toFixed(0)}` : "lost"}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
         {toast ? <div className="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-full bg-black/80 px-4 py-2 text-sm text-white">{toast}</div> : null}
       </div>
     </main>
